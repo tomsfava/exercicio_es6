@@ -28,3 +28,9 @@ console.log(aprovados);
 console.log(aprovados.length);
 console.log(reprovados);
 console.log(reprovados.length);
+
+const listaAprovados = aprovados.map(aluno => aluno.nome);
+const listaReprovados = reprovados.map(aluno => aluno.nome)
+
+console.log(`São ${reprovados.length} alunos reprovados, são eles: ${listaReprovados.join(', ')}`);
+console.log(`São ${aprovados.length} alunos aprovados, são eles: ${listaAprovados.join(', ')}`);
